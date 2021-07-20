@@ -1,7 +1,7 @@
 <?php 
 
 // koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "app-peminjaman-buku");
+$conn = mysqli_connect("localhost", "handi2", "7jebatsendal", "handi2");
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 	function query($query) {
@@ -186,6 +186,17 @@ function cari($keyword) {
 	}
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+	function cekPeminjaman(){
+		global $conn;
+
+		$query = "SELECT transaksi.id, user.username, buku.judul, transaksi.status, transaksi.waktu_peminjaman, transaksi.waktu_pengembalian FROM ((transaksi INNER JOIN user ON transaksi.username = user.username) INNER JOIN buku ON transaksi.kd_buku = buku.kode_buku)";
+		$result = $conn->query($query);
+		$rows = $result->fetch_all(MYSQLI_ASSOC);
+		$result->free_result();
+		$conn->close();
+		return $rows;
+	}
 
 
 ?>
