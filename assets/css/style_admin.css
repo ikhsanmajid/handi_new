@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(182, 228, 186);
+    font: 16px sans-serif,arial;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(6, 119, 49);
+    height: 65px;
+    width: 100%;
+    top: 0;
+    left: 0;
+   }
+
+header p {
+    padding-bottom: 15px;
+    font-size: 25px;
+    color: white;
+    line-height: 18px;
+    font-weight: bold;
+    float: left;
+    margin-left: 550px;
+    text-align: center;
+    }
+
+/* LOGIN & REGISTER */
+
+.menu>.menu-content{
+	width: 200px;
+	height: 65px;
+	float: right;
+	font-family: sans-serif,Arial;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	position: relative;
+	color: white;
+	line-height: 65px;
+    background-color:  rgb(6, 119, 49);
+}
+.menu>.menu-content>a{
+	color: white;
+	text-decoration: none;
+}
+
+
+sidebar {
+    top: 65px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;   
+}
+
+sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* .active {
+    background-color: #04AA6D;
+    color: rgb(0, 0, 0);
+} */
+
+sidebar a:hover:not(.active) {
+    background-color: rgb(22, 92, 26);
+    color: white;
+}
+
+
+
+.dropdown {
+    margin-top: -13px;
+    margin-left: -15px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+/* ISI ////////////////////// */
+div.content {
+    margin-top: 50px;
+    margin-left: 200px;
+    padding: 20px 20px;
+    height: 700px;
+    background-color: rgb(182, 228, 186);
+   }
+
+
+
+/*//////////////////////////////////////////////*/
+.accordion {
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(93, 185, 97);
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+/* ........................................... */
+/* ........Tabel Buku........... */
+ 
+#tabelbuku {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tabelbuku td, #tabelbuku th {
+    border: 1px solid rgb(221, 221, 221);
+    padding: 10px 0px 10px 10px;
+  }
+  
+  #tabelbuku tr{
+    background-color: #f2f2f2;
+    text-align: center;
+   }
+  
+  /* #tabelbuku tr:hover {background-color: #ddd;} */
+  
+  #tabelbuku th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* ............................................ */
+
+  div.content h2 {
+    background-color: rgb(55, 143, 106);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    }
+
+
+
+
+/*//////////////////////////////////////////////*/
+/* garis bawah */
+   div.content h2 {
+            background-color: rgb(55, 143, 106);
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            padding: 10px;
+            }
+/* ........................................ */
+    div.content input[type="text"], textarea {
+         width: 600px;
+         margin: 10px;
+        margin-left: 14px;
+         padding: 10px;
+            }        
+/* .......................................... */
+
+footer {
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    left: 0;
+    padding: 0;
+    background-color: rgb(6, 119, 49);
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+}
+

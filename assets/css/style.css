@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+
+body {
+    background-color: rgb(182, 228, 186);
+    }
+
+/*Navigasi*/
+
+nav ul li.users{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 6;
+  color: white;
+  padding: 15px 20px;
+  background-color: teal;
+}
+
+nav{
+  background: rgb(6, 119, 49);
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer; 
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #4ce459;
+  opacity: 0;
+  
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+
+nav ul li.site{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+nav ul li:hover a{
+  color: #4ce459;
+}
+nav ul li i{
+  font-size: 23px;
+}
+/* #active {
+    background-color: rgb(22, 100, 26);
+    padding: 15px;
+    margin: 0; 
+} */
+/* ................. */
+
+/*Isi*/
+div.content {
+    padding: 20px 30px 0 30px;
+    height: 700px;
+    background-color: rgb(182, 228, 186);
+    overflow:visible;
+   }
+
+ /* ........Tabel Buku........... */
+ 
+ #tabelbuku {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+#tabelbuku td, #tabelbuku th {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 10px 0px 10px 10px;
+}
+
+#tabelbuku tr{
+  background-color: #f2f2f2;
+  text-align: center;
+ }
+
+/* #tabelbuku tr:hover {background-color: #ddd;} */
+
+#tabelbuku th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+/* ............................................ */
+div.content h2 {
+  background-color: rgb(55, 143, 106);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  }
+
+/*Copyright*/
+footer {
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0;
+    background-color: rgb(6, 119, 49);
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+}
